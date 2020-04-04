@@ -13,11 +13,12 @@ function reset() {
 
 reset()
 
-function showUpgrade(id) {
-  document.getElementById(id).style.display = 'block';
-}
-//defining upgrade showing as none
+//defining upgrade showing as none or some
+if (game.cash >= 10) {
+document.getElementById("upgrade1").style.display = 'block';
+} else {
 document.getElementById("upgrade1").style.display = 'none';
+}
 
 function update() {
   document.getElementById("cash_number").innerHTML = game.cash
@@ -35,10 +36,6 @@ function update() {
   }
 
 update()
-
-if (game.cash >= 10) {
-showUpgrade("upgrade1");
-}
 
 
 function purchaseUpgrade(id) {
