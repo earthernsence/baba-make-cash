@@ -47,12 +47,9 @@ if (game.upgradesPurchased.includes("upgrade1")) {
 
 
 
-function more_cash() {
-if (game.upgradesPurchased.includes("upgrade1")) {
-game.cash = game.cash.add(2)
-} else {
-  game.cash = game.cash.add(1)
+function moreCash() {
+game.cash = game.cash.add(1)
 }
-}
+
 
 setInterval(update, 10)
