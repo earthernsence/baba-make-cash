@@ -31,9 +31,9 @@ function update() {
 update()
 //defining upgrades showing as none or some
 if (game.cash >= 10) {
-document.getElementById("upgrade1").style.display = 'block';
+document.getElementById("upgrade1").style="display:block";
 } else {
-document.getElementById("upgrade1").style.display = 'none';
+document.getElementById("upgrade1").style="display:none"
 }
 
 function purchaseUpgrade(id) {
