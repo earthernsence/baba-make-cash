@@ -29,26 +29,35 @@ function update() {
   }
 
 update()
+
 //defining upgrades showing as none or some
+function checkIfCanShowUpgrade() {
 if (game.cash >= 10) {
 document.getElementById("upgrade1").style="display:block";
 } else {
-document.getElementById("upgrade1").style="display:none"
+   document.getElementById("upgrade1").style="display:none"
 }
+}
+//end 
 
+//how purchasing upgrades works. checks array and then subtracts cost and sets upgrade as not showing.
 function purchaseUpgrade(id) {
  if (game.upgradesPurchased.includes("upgrade1")) {
   game.cash = game.cash - 10
+document.getElementById("upgrade1").style="display:none"
 }
 }
+//end
 
-
+//how CPC is calculated.
 function moreCash() {
 game.cash = game.cash.add(1)
 if (game.upgradesPurchased.includes("upgrade1")) {
   game.cash = game.cash.add(2)
 }
 }
+//end
 
-
+//running functions 
 setInterval(update, 10)
+setInterval(checkIfCanShowUpgrade, 10)
