@@ -40,7 +40,7 @@ update()
 
 function purchaseUpgrade(id) {
  if (game.upgradesPurchased.includes("upgrade1")) {
-  game.cash - game.upgradeCost[0]
+  game.cash = game.cash - 10
 }
 }
 
