@@ -30,7 +30,6 @@ function update() {
     document.getElementById('cash').style.top = "0px"
     document.getElementById('cash').style.width = "600px"
   }
-}
 
 update()
 
