@@ -45,6 +45,9 @@ function purchaseUpgrade(id) {
 
 function moreCash() {
 game.cash = game.cash.add(1)
+if (game.upgradesPurchased.includes("upgrade1")) {
+  game.cash = game.cash.add(2)
+}
 }
 
 
