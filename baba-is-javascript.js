@@ -44,7 +44,7 @@ document.getElementById("upgrade1").style="display:block";
 function purchaseUpgrade(id) {
   game.upgradesPurchased.push(id); //used because it doesnt work by itself in html?
  if (game.upgradesPurchased.includes("upgrade1")) {
-  game.cash = new Decimal(game.cash - 10);
+  game.cash = game.cash.minus(10);
 document.getElementById("upgrade1").style="display:none";
 }
 }
