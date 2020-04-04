@@ -42,9 +42,10 @@ document.getElementById("upgrade1").style="display:block";
 
 //how purchasing upgrades works. checks array and then subtracts cost and sets upgrade as not showing.
 function purchaseUpgrade(id) {
+  game.upgradesPurchased.push(id); //used because it doesnt work by itself in html?
  if (game.upgradesPurchased.includes("upgrade1")) {
-  game.cash = game.cash - 10
-document.getElementById("upgrade1").style="display:none"
+  game.cash = game.cash - 10;
+document.getElementById("upgrade1").style="display:none";
 }
 }
 //end
