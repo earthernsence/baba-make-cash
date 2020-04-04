@@ -52,9 +52,10 @@ document.getElementById("upgrade1").style="display:none";
 
 //how CPC is calculated.
 function moreCash() {
+if (game.upgradesPurchased.length = 0) {
 game.cash = game.cash.add(1)
-if (game.upgradesPurchased.includes("upgrade1")) {
-  game.cash = game.cash.add(2)
+} else if (game.upgradesPurchased.length = 1) {
+game.cash = game.cash.add(2)
 }
 }
 //end
