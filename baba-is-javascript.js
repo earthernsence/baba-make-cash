@@ -54,5 +54,6 @@ game.cash = game.cash.add(2)
 } else {
   game.cash = game.cash.add(1)
 }
+}
 
 setInterval(update, 10)
