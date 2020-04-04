@@ -37,6 +37,9 @@ document.getElementById("upgrade1").style="display:block";
 } else {
    document.getElementById("upgrade1").style="display:none"
 }
+  if (game.upgradesPurchased.includes("upgrade1")) {
+     document.getElementById("upgrade1").style="display:none"
+  }
 }
 //end 
 
